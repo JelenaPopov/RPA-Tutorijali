@@ -1,0 +1,147 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Implementacija_main_metode" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="892.8,1792.58181818182" sap2010:WorkflowViewState.IdRef="Implementacija_main_metode_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Implementacija_main_metode" sap:VirtualizedContainerService.HintSize="376.145454545455,1728" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="600" Name="delayBefore" />
+      <Variable x:TypeArguments="x:Int32" Default="90" Name="delayBetweenKeys" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="Promenljive" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Promenljive u programskom jeziku čuvaju neku vrednost, pri čemu se ta vrednost može menjati u toku izvršavanja programa.&quot; + Environment.NewLine + Environment.NewLine +&#xA;&quot;Svaka promenljiva koja se koristi mora biti deklarisana. Deklaracijom se određuju:&quot; + Environment.NewLine +&#xA;&quot;1. tip promenljive&quot; + Environment.NewLine +&#xA;&quot;2. ime promenljive&quot; + Environment.NewLine +&#xA;&quot;3. početna vrednost [ne mora da se navede]. &quot; + Environment.NewLine + Environment.NewLine +&#xA;&quot;Deklaracija promenljive ima sledeći zapis: &quot; + Environment.NewLine +&#xA;vbTab + &quot;tip_promenljive ime_promenjive [= vrednost];&quot; +  Environment.NewLine + Environment.NewLine +&#xA;&quot;Na primer: 'int i = 5;' predstavlja deklaraciju promenljive celobrojnog tipa sa nazivom 'i' i vrednošću 5.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Pravila za dodeljivanje imena promenljivih" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Promenljiva može sadržati proizvoljno ime, ali ono treba da opisuje namenu promenljive.&quot; + Environment.NewLine + &#xA;&quot;Na primer, ako promenljiva treba da čuva zbir nekih brojeva promenljivu bi trebalo nazvati 'zbir' ili 'rezultat'. &quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Prva promenljiva" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Sada ćemo kreirati promenljivu celobrojnog tipa sa nazivom 'godinaRodjenja' i vrednošću 1995.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="%[k(down)][k(down)][k(down)][k(down)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5915a572-b31d-469f-b4b3-c268dedce84f" InformativeScreenshot="7dee414e1d9bd237d0651bf966b3e09f" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Promenljive/src/Promenljive.java - Eclipse IDE' /&gt;&lt;wnd aaname='Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="%[k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(tab)][k(enter)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c096bbcd-4bd4-47ce-aee6-44dd2928637b" InformativeScreenshot="be7073b4772b1f6012dc937978e56bfb" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Promenljive/src/Promenljive.java - Eclipse IDE' /&gt;&lt;wnd aaname='Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[&quot;int godinaRodjenja = 1995;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(godinaRodjenja&quot; + &quot;[k(right)]; [k(enter)]&quot; + &quot;[k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c096bbcd-4bd4-47ce-aee6-44dd2928637b" InformativeScreenshot="3281d33e523dfc470be71711444c4884" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Promenljive/src/Promenljive.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Tipovi podataka" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Najčešće korišćeni tipovi podataka u Java programskom jeziku su: &quot; + Environment.NewLine + &#xA;&quot;1. int - ceo broj (npr. int rezultat = 0;)&quot; + Environment.NewLine + &#xA;&quot;2. float/double - realni brojevi (npr. double suma = 5.69;)&quot; + Environment.NewLine + &#xA;&quot;3. boolean - logički tip podataka koji sadrži true ili false vrednost (npr. boolean musko = false;)&quot; + Environment.NewLine + &#xA;&quot;4. char - karakter/znak (npr. char c = 'c';)&quot; + Environment.NewLine + &#xA;&quot;5. String - niz karaktera (npr. String ime = 'Perica').&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Kreiranje promenljivih" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Sada ćemo kreirati po jednu promenljivu svakog tipa i ispisaćemo ih u konzoli upotrebom 'System.out.println()' metode.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="[&quot;float f = 35e3f; &quot; + &quot;[k(enter)]&quot; + &#xA;&quot;System.out.println(f&quot; + &quot;[k(right)]; [k(enter)]&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;double d = 55.2;&quot; + &quot;[k(enter)]&quot; + &#xA;&quot;System.out.println(d&quot; + &quot;[k(right)]; [k(enter)]&quot; +&quot;[k(enter)]&quot; +&#xA;&quot;boolean musko = true; &quot; + &quot;[k(enter)]&quot; + &#xA;&quot;System.out.println(musko&quot; + &quot;[k(right)]; [k(enter)]&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;char c = 'c'; &quot; + &quot;[k(enter)]&quot; + &#xA;&quot;System.out.println(c&quot; + &quot;[k(right)]; [k(enter)]&quot; +&quot;[k(enter)]&quot; +&#xA;&quot;String ime = &quot; + Chr(34) +&quot;Perica&quot; + Chr(34) + &quot;; &quot; + &quot;[k(enter)]&quot; + &#xA;&quot;System.out.println(ime&quot; + &quot;[k(right)];&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f12e66f4-a928-45cd-ae5e-d3581f5b6294" InformativeScreenshot="8961b91d107e80ad0b1864e7dbde50cc" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Promenljive/src/Promenljive.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Čuvanje fajla" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Da bismo sačuvali fajl pritisnućemo Ctrl+S.&quot;]" />
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_1" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f944e92b-f6b8-4726-a218-01bc10eddd77" InformativeScreenshot="5e2a67f5b0e992f0983d8aadf5518d5d" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Promenljive/src/Promenljive.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9740ee6c-8143-4363-a178-304158eba0d8" InformativeScreenshot="3d163c29a86e1f62f161399fea2fa192" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Promenljive/src/Promenljive.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Promenljive.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+  </Sequence>
+</Activity>
