@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Implementacija_main_metode" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="892.8,1691.34545454545" sap2010:WorkflowViewState.IdRef="Implementacija_main_metode_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Implementacija_main_metode" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="829.963636363636,1592.72727272727" sap2010:WorkflowViewState.IdRef="Implementacija_main_metode_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -59,13 +59,23 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Implementacija_main_metode" sap:VirtualizedContainerService.HintSize="376.145454545455,1626.76363636364" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Implementacija_main_metode" sap:VirtualizedContainerService.HintSize="376.145454545455,1528.14545454545" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="codeLines" />
       <Variable x:TypeArguments="x:String" Name="content" />
       <Variable x:TypeArguments="s:String[]" Name="importStatements" />
       <Variable x:TypeArguments="x:Int32" Name="indexOfMainMethod" />
       <Variable x:TypeArguments="s:String[]" Name="codeLines2" />
+      <Variable x:TypeArguments="x:Int32" Name="delayBefore">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="600" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="delayBetweenKeys">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="90" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -73,7 +83,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:MessageBox ChosenButton="{x:Null}" Caption="Implementacija main metode" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;U kreiranoj klasi ćemo implementirati logiku za proveru da li je uneti tekst palindrom. To podrazumeva da sva slova pretvorimo u mala, pročitamo tekst unazad for petljom i uporedimo ga sa originalnim tekstom.&quot;]" />
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBetweenKeys="20" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="%[k(down)][k(down)][k(down)][k(down)]">
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="%[k(down)][k(down)][k(down)][k(down)]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d49f35fc-ecc0-424d-aabb-2cf565dff3a6" InformativeScreenshot="20b96579a004e30bcd1a6ee2efc70205" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Palindrom/src/Palindrom.java - Eclipse IDE' /&gt;&lt;wnd aaname='Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
           <ui:Target.TimeoutMS>
@@ -85,7 +95,7 @@
         </ui:Target>
       </ui:TypeInto.Target>
     </ui:TypeInto>
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBetweenKeys="20" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="%[k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(tab)][k(enter)]">
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="%[k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(tab)][k(enter)]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="31ba5636-2598-45f7-9cb6-33226f33f369" InformativeScreenshot="524389c3ce6390d91bd78e626d3601cd" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Palindrom/src/Palindrom.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
           <ui:Target.TimeoutMS>
@@ -97,7 +107,7 @@
         </ui:Target>
       </ui:TypeInto.Target>
     </ui:TypeInto>
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBetweenKeys="30" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_12" Text="[&quot;String unetiTekst, obrnutiTekst = &quot; + Chr(34) + Chr(34)+ &quot;; [k(enter)]&quot; + &quot;Scanner&quot;]">
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_12" Text="[&quot;String unetiTekst, obrnutiTekst = &quot; + Chr(34) + Chr(34)+ &quot;; [k(enter)]&quot; + &quot;Scanner&quot;]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bcc4df5b-ab59-4f95-82a6-223547d93463" InformativeScreenshot="4e69e319c31a5ff31eee89995c52a5ee" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Palindrom/src/Palindrom.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
           <ui:Target.TimeoutMS>
@@ -109,7 +119,7 @@
         </ui:Target>
       </ui:TypeInto.Target>
     </ui:TypeInto>
-    <ui:MessageBox ChosenButton="{x:Null}" Caption="Import Scanner" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Da biste automatski import-ovali Scanner neophodno je da pritisnete Ctr+Space.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Import Scanner" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Scanner je klasa koju koristimo da korisniku omogućimo interakciju sa programom tako što mu ponudimo da programu zada neku vrednost za obradu. &quot; + Environment.NewLine +&#xD;&#xA;&quot;Da biste automatski import-ovali Scanner neophodno je da pritisnete Ctr+Space.&quot;]" />
     <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key=" " KeyModifiers="Ctrl" SpecialKey="False">
       <ui:SendHotkey.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="590717f6-3c5f-445a-9055-6799a85cf86a" InformativeScreenshot="1cecf837465c0a42535052c7c138e722" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Palindrom/src/Palindrom.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
@@ -122,7 +132,7 @@
         </ui:Target>
       </ui:SendHotkey.Target>
     </ui:SendHotkey>
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBetweenKeys="30" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="[&quot; skener = new Scanner(System.in&quot; +  &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Unesite tekst za koji želite da proverite da li je palindrom:&quot; + Chr(34) + &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;[k(enter)]&quot; +&#xA;&quot;unetiTekst = skener.nextLine(&quot; + &quot;[k(right)]; [k(enter)][k(enter)]&quot; +&#xA;&quot;unetiTekst = unetiTekst.replace(&quot; +  Chr(34) + &quot; &quot; +  Chr(34) + &quot;,&quot;+Chr(34) + Chr(34)+ &quot;)&quot; + &quot;.&quot; + &quot;toLowerCase();&quot; + &quot;[k(enter)]&quot; + &#xA;&quot;[k(enter)]&quot; + &#xA;&quot;int duzina = unetiTekst.length(&quot; +&quot;[k(right)]; [k(enter)][k(enter)]&quot; +&#xA;&quot;[k(enter)]&quot; +&#xA;&quot;for (int i = duzina - 1; i &gt;= 0; i--)&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;obrnutiTekst = obrnutiTekst + unetiTekst.charAt(i);&quot; +&#xA;&quot;[k(enter)]&quot; +&#xA;&quot;if (unetiTekst.equals(obrnutiTekst)) {&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Uneti tekst JESTE palindrom.&quot; + Chr(34) + &quot;[k(right)]; [k(enter)]&quot;+&#xA;&quot;} else {&quot;+&quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Uneti tekst NIJE palindrom.&quot; + Chr(34) + &quot;[k(right)]; [k(down)][k(enter)][k(enter)]&quot; +&#xA;&quot;skener.close();&quot;]">
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="[&quot; skener = new Scanner(System.in&quot; +  &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Unesite tekst za koji želite da proverite da li je palindrom:&quot; + Chr(34) + &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;[k(enter)]&quot; +&#xA;&quot;unetiTekst = skener.nextLine(&quot; + &quot;[k(right)]; [k(enter)][k(enter)]&quot; +&#xA;&quot;unetiTekst = unetiTekst.replace(&quot; +  Chr(34) + &quot; &quot; +  Chr(34) + &quot;,&quot;+Chr(34) + Chr(34)+ &quot;)&quot; + &quot;.&quot; + &quot;toLowerCase();&quot; + &quot;[k(enter)]&quot; + &#xA;&quot;[k(enter)]&quot; + &#xA;&quot;int duzina = unetiTekst.length(&quot; +&quot;[k(right)]; [k(enter)][k(enter)]&quot; +&#xA;&quot;[k(enter)]&quot; +&#xA;&quot;for (int i = duzina - 1; i &gt;= 0; i--)&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;obrnutiTekst = obrnutiTekst + unetiTekst.charAt(i);&quot; +&#xA;&quot;[k(enter)]&quot; +&#xA;&quot;if (unetiTekst.equals(obrnutiTekst)) {&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Uneti tekst JESTE palindrom.&quot; + Chr(34) + &quot;[k(right)]; [k(enter)]&quot;+&#xA;&quot;} else {&quot;+&quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Uneti tekst NIJE palindrom.&quot; + Chr(34) + &quot;[k(right)]; [k(down)][k(enter)][k(enter)]&quot; +&#xA;&quot;skener.close();&quot;]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2bab7765-dcda-4d28-8e25-3456f88154dd" InformativeScreenshot="1cecf837465c0a42535052c7c138e722" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Palindrom/src/Palindrom.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
           <ui:Target.TimeoutMS>
@@ -134,7 +144,6 @@
         </ui:Target>
       </ui:TypeInto.Target>
     </ui:TypeInto>
-    <ui:MessageBox ChosenButton="{x:Null}" Caption="Čuvanje fajla" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Da bismo sačuvali fajl pritisnućemo Ctrl+S.&quot;]" />
     <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_7" KeyModifiers="None">
       <ui:SendHotkey.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="202b80f0-56e4-41ea-9f14-9810a900c471" InformativeScreenshot="cb273c399d3f0c1d729cafa9102ec14e" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Palindrom/src/Palindrom.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Palindrom.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">

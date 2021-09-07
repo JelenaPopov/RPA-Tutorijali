@@ -1,0 +1,235 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Implementacija_main_metode" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="892.8,3498.76363636364" sap2010:WorkflowViewState.IdRef="Implementacija_main_metode_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Implementacija_main_metode" sap:VirtualizedContainerService.HintSize="376.145454545455,3434.18181818182" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="delayBefore">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="600" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="delayBetweenKeys">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="90" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredbe grananja" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Naredbe grananja obezbeđuju alternativne tokove izvršavanja programa zavisno od vrednosti nekog logičkog izraza. &quot; + Environment.NewLine +&#xD;&#xA;&quot;Naredbe grananja omogućavaju da se izabere jedan niz naredbi za izvršavanje, a da se drugi niz naredbi preskoči i nikad ne izvrši.&quot;+ Environment.NewLine + Environment.NewLine +&#xD;&#xA;&quot;U naredbe grananja spadaju: &quot; + Environment.NewLine +&#xD;&#xA;&quot;1. Naredba if &quot; + Environment.NewLine +&#xD;&#xA;&quot;2. Naredba if-else &quot; + Environment.NewLine +&#xD;&#xA;&quot;3. Naredba switch &quot; + Environment.NewLine]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredba if i if-else" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Naredbe if i if-else služe za izbor jednog od dva alternativna niza naredbi za izvršavanje, u zavisnosti od toga da li je vrednost datog izraza true ili false.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredba if" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Naredba if, u opštem obliku počinje ključnom rečju 'if' iza koje se, u zagradama, navodi neki logički izraz, i na kraju se definišu naredbe koje će se izvršiti ako je uslov zadovoljen.&quot; + Environment.NewLine +&#xD;&#xA; Environment.NewLine + &quot;Na primer: &quot; + Environment.NewLine +&#xD;&#xA;vbTab +&quot;if (poluprecnik &gt; 0) {&quot; + Environment.NewLine +&#xD;&#xA;vbTab +&quot;     obimKruga = 2 * poluprecnik * 3.14;&quot; + Environment.NewLine + &#xD;&#xA;vbTab +&quot;}&quot; + Environment.NewLine + &#xD;&#xA;&quot;U ovom primeru se naredbom if proverava da li je vrednost promenljive 'poluprecnik' veća od nule. Ako je uslov zadovoljen, izračunava se obim kruga.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredba if" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Sada ćemo prikazati jedan primer if naredbe.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="%[k(down)][k(down)][k(down)][k(down)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a37ae9c7-171e-4ec3-8b56-d5e4f8ca32b9" InformativeScreenshot="0472fce01222ae07d79b80938d7a3c48" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="%[k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(tab)][k(enter)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0574a9a5-acba-46c4-94b2-39e84082cf33" InformativeScreenshot="0e25f35c572219c9102773da0bd4d790" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[&quot;int cena = 2000; &quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;if (cena &gt; 1000) {&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Cena je veca od 1000.&quot; + Chr(34) + &quot;[k(right)]; [k(down)][k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0e4666cc-fbea-461e-9a36-7f52f2b06b53" InformativeScreenshot="a0d3689ad4b8db3bf0b3340e9cca9781" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_1" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7016c9a2-1658-4dd7-8748-1b2b01a8b3f2" InformativeScreenshot="9a62c56888cb6384e06b689c2dd48a5d" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="44069cc9-cbde-413e-8afd-2f7da37dea62" InformativeScreenshot="9a62c56888cb6384e06b689c2dd48a5d" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredba if-else" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Naredba if-else se razlikuje od naredbe if po tome što se definišu i naredbe koje treba da se izvrše ako uslov nije zadovoljen. &quot; + Environment.NewLine +&#xD;&#xA;&quot;U okviru if bloka se definišu naredbe koje će se izvršiti ukoliko je uslov zadovoljen, a u okviru else bloka se definišu naredbe koje će izvršiti ukoliko uslov nije zadovoljen.&quot; + Environment.NewLine +&#xD;&#xA; Environment.NewLine + &quot;Na primer: &quot; + Environment.NewLine +&#xD;&#xA;vbTab +&quot;if (poluprecnik &gt; 0) {&quot; + Environment.NewLine +&#xD;&#xA;vbTab +&quot;     obimKruga = 2 * poluprecnik * 3.14;&quot; + Environment.NewLine + &#xD;&#xA;vbTab +&quot;} else {&quot; + Environment.NewLine +&#xD;&#xA;vbTab +&quot;     System.out.println('Greška: poluprečnik nije pozitivan broj!');&quot; + Environment.NewLine + &#xD;&#xA;vbTab +&quot;}&quot; + Environment.NewLine + &#xD;&#xA;&quot;U ovom primeru se naredbom if proverava da li je vrednost promenljive 'poluprecnik' veća od nule. Ako je uslov zadovoljen, izračunava se obim kruga.&quot; + Environment.NewLine +&#xD;&#xA;&quot;Ako uslov nije zadovoljen, ispisuje se poruka greške.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredba if" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Sada ćemo prikazati jedan primer if-else naredbe.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[&quot;[k(enter)]&quot; +&#xD;&#xA;&quot;int broj = 5;&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;if ((broj % 2) == 0) {&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Broj &quot; + Chr(34) + &quot; + broj + &quot; + Chr(34) + &quot; je paran broj.&quot; + Chr(34) + &quot;[k(right)]; [k(down)]&quot; +&#xD;&#xA;&quot; else { &quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Broj &quot; + Chr(34) + &quot; + broj + &quot; + Chr(34) + &quot; je neparan broj.&quot; + Chr(34) + &quot;[k(right)]; [k(down)][k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="814ceb7f-80f5-4c67-bb8e-f814a81deb11" InformativeScreenshot="e866822b9cc5612edc4409aa9f41c2ad" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_3" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6fe2e52-1aba-4206-a1f6-ab5bee111157" InformativeScreenshot="90130f8ba5b421ec9fd38333d1265c9e" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fd4993f4-308a-4d8d-ab78-729c64f8d913" InformativeScreenshot="7ab814944489abbf68e63671970c0a0b" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredba switch" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Naredba switch je specijalan slučaj naredbe višestrukog grananja kada izbor jednog od više alternativnih tokova zavisi od vrednosti datog izraza/promenljive.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredba switch" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Sada ćemo prikazati jedan primer naredbe switch.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[&quot;[k(enter)]&quot; +&#xD;&#xA;&quot;int redniBrojDanaUNedelji = 5;&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;String dan = &quot; + Chr(34) + Chr(34)+ &quot;;[k(enter)]&quot; +&#xD;&#xA;&quot;switch (redniBrojDanaUNedelji) {&quot; +  &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;[k(tab)]&quot; +&quot;case 1: &quot; +  &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;dan = &quot; + Chr(34)  + &quot;Ponedeljak&quot; + Chr(34)+ &quot;;[k(enter)]&quot; +&#xD;&#xA;&quot;break;&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;case 2: &quot; +  &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;dan = &quot; + Chr(34)  + &quot;Utorak&quot; + Chr(34)+ &quot;;[k(enter)]&quot; +&#xD;&#xA;&quot;break;&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;case 3: &quot; +  &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;dan = &quot; + Chr(34)  + &quot;Sreda&quot; + Chr(34)+ &quot;;[k(enter)]&quot; +&#xD;&#xA;&quot;break;&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;case 4: &quot; +  &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;dan = &quot; + Chr(34)  + &quot;Cetvrtak&quot; + Chr(34)+ &quot;;[k(enter)]&quot; +&#xD;&#xA;&quot;break;&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;case 5: &quot; +  &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;dan = &quot; + Chr(34)  + &quot;Petak&quot; + Chr(34)+ &quot;;[k(enter)]&quot; +&#xD;&#xA;&quot;break;&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;case 6: &quot; +  &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;dan = &quot; + Chr(34)  + &quot;Subota&quot; + Chr(34)+ &quot;;[k(enter)]&quot; +&#xD;&#xA;&quot;break;&quot; + &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;case 7: &quot; +  &quot;[k(enter)]&quot; +&#xD;&#xA;&quot;dan = &quot; + Chr(34)  + &quot;Nedelja&quot; + Chr(34)+ &quot;;[k(enter)]&quot; +&#xD;&#xA;&quot;break;&quot; + &quot;[k(down)][k(enter)]&quot; +&#xD;&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Danas je: &quot; + Chr(34) + &quot; + dan&quot; + &quot;[k(right)]; [k(down)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="804c7477-6ed1-4fda-927c-d66a6c9ff174" InformativeScreenshot="c0937b7cf4e655139bd23fc0da29b1a2" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_5" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9cf68ff-285f-4b13-9352-1487e971f40b" InformativeScreenshot="a229053e1ba93c7154df8ecca11c2fc8" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19a13977-9b97-41a2-ab40-0da673b15245" InformativeScreenshot="a229053e1ba93c7154df8ecca11c2fc8" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - NaredbeGrananja/src/NaredbeGrananja.java - Eclipse *' /&gt;&lt;wnd aaname='*NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='NaredbeGrananja.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredni primer" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[&quot;U ovom primeru smo naučili šta su naredbe grananja.&quot; + Environment.NewLine +&#xD;&#xA;&quot;U narednom primeru ćemo naučiti šta su petlje.&quot;]" />
+  </Sequence>
+</Activity>

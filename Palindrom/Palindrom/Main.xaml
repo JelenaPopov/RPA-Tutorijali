@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="914.618181818182,979.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="829.963636363636,1077.81818181818" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -61,13 +61,9 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="392.727272727273,914.618181818182" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="392.727272727273,1013.23636363636" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="messageBoxText">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">U ovom primeru će biti implementirana funkcija za proveru da li je uneti tekst palindrom.</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="U ovom primeru će biti implementirana funkcija za proveru da li je uneti tekst palindrom." Name="messageBoxText" />
       <Variable x:TypeArguments="x:String" Name="variable1" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -80,22 +76,16 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:MessageBox ChosenButton="{x:Null}" Caption="Palindorm" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="350.836363636364,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[messageBoxText]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Palindorm" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="350.836363636364,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;U ovom primeru će biti implementirana funkcija za proveru da li je uneti tekst palindrom.&quot; + Environment.NewLine +&#xD;&#xA;&quot;Tekst je palindrom ako se čita isto s' leva i s' desna.&quot;]" />
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Kreiranje projekta workflow" sap:VirtualizedContainerService.HintSize="350.836363636364,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Kreiranje projekta.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="projectName">
-          <Literal x:TypeArguments="x:String">Palindrom</Literal>
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="projectName">Palindrom</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Kreiranje klase workflow" sap:VirtualizedContainerService.HintSize="350.836363636364,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Kreiranje klase.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="className">
-          <Literal x:TypeArguments="x:String">Palindrom</Literal>
-        </InArgument>
-        <InArgument x:TypeArguments="x:Boolean" x:Key="mainMethod">
-          <Literal x:TypeArguments="x:Boolean" Value="True" />
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="className">Palindrom</InArgument>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="mainMethod">True</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Implementacija main metode workflow" sap:VirtualizedContainerService.HintSize="350.836363636364,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Implementacija main metode.xaml">
@@ -108,5 +98,6 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Kraj" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="350.836363636364,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Ovim primerom obuhvatili smo većinu obrađenog gradiva i time zaokružili priču o osnovama programiranja u Java programskom jeziku.&quot;]" />
   </Sequence>
 </Activity>
