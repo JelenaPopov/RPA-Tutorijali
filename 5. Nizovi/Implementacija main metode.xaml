@@ -1,0 +1,263 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Implementacija_main_metode" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="972.218181818182,4160.29090909091" sap2010:WorkflowViewState.IdRef="Implementacija_main_metode_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Implementacija_main_metode" sap:VirtualizedContainerService.HintSize="376.145454545455,4095.70909090909" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="600" Name="delayBefore" />
+      <Variable x:TypeArguments="x:Int32" Default="90" Name="delayBetweenKeys" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Nizovi" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Niz je sekvenca objekata ili elemenata prostog tipa, pri čemu su svi elementi niza istog tipa.&quot; + Environment.NewLine]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Deklaracija niza" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Niz se deklariše tako što se: &quot; + &quot;prvo definiše tip elemenata niza, zatim idu otvorena i zatvorena uglasta zagrada, i nakon toga se navodi naziv niza.&quot; + Environment.NewLine + &#xA;&quot;Na primer, int[] niz; je jedan primer deklaracije niza.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Konstrukcija niza" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Nakon deklaracije niza, postoji samo rezervisan naziv promenljive za taj niz, ali sam niz u tom trenutku ne postoji. Da bi niz postojao, mora da se konstruiše. &quot;+ Environment.NewLine + Environment.NewLine +&#xA;&quot;Konstrukcija niza se vrši pomoću ključne reči 'new', pri čemu se definiše i broj elemenata tog niza.&quot; + Environment.NewLine + Environment.NewLine +&#xA;&quot;Konstrukcija niza može se izvršiti u istom redu naredbe kao i deklaracija:&quot; + Environment.NewLine +&#xA; vbTab +&quot;int[] niz1 = new int[8]; &quot;+ Environment.NewLine +&#xA;&quot;Deklaracija i konstrukcija niza mogu da budu i odvojene u dve naredbe:&quot; +Environment.NewLine +&#xA; vbTab +&quot;long[] niz2; &quot; + Environment.NewLine +&#xA; vbTab +&quot;niz2 = new long[25];&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Deklaracija i konstrukcija niza" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Sada ćemo prikazati kako se vrši deklaracija i konstrukcija niza u Java programskom jeziku.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="%[k(down)][k(down)][k(down)][k(down)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ccb8ecd7-2bbd-4498-83b4-ebc64cc2ae32" InformativeScreenshot="550de7922d597005cd7f1b6266d32922" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="%[k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(tab)][k(enter)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ccb8ecd7-2bbd-4498-83b4-ebc64cc2ae32" InformativeScreenshot="8823ebfaee2f573e593ea93450bffe52" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[&quot;String&quot; + &quot;[[&quot; + &quot;]&quot; + &quot; automobili;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;int&quot;+&quot;[[&quot; + &quot;]&quot; + &quot; ocene = new int&quot; + &quot;[[&quot; + &quot;2&quot;+ &quot;]&quot; + &quot;;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;automobili = new String&quot;+&quot;[[&quot; + &quot;4&quot;+  &quot;]&quot;+ &quot;;&quot; + &quot;[k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ccb8ecd7-2bbd-4498-83b4-ebc64cc2ae32" InformativeScreenshot="7ce840ef138da62a637bc085a81ea1a5" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Inicijalizacija niza" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Nakon izvršene deklaracije i konstrukcije niza, elementi tog novonastalog niza imaju svoje podrazumevane vrednosti. &quot; +  Environment.NewLine +&#xA;&quot;Inicijalna vrednost za brojeve, bez obzira da li su celi ili realni, je 0.&quot; +  Environment.NewLine + &quot;Inicijalna vrednost za stringove je prazan string. &quot; +  Environment.NewLine +&#xA;&quot;Inicijalna vrednost za objekte je null. &quot; + Environment.NewLine +  Environment.NewLine +&#xA;&quot;U mnogim situacijama je potrebno da se definišu konkretne vrednosti niza na početku rada programa. &quot; +  Environment.NewLine +&#xA;&quot;Definisanje vrednosti elemenata niza se zove INICIJALIZACIJA.&quot; +   Environment.NewLine +&#xA;&quot;Inicijalizacija se vrši tako što se pristupi konkretnom elementu niza i dodeli mu se konkretna vrednost.&quot; + Environment.NewLine +&#xA;&quot;Na primer. automobili[0] = 'Audi'; je primer inicijalizacije nultog elementa niza.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Inicijalizacija niza" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Sada ćemo inicijalizovati prethodno kreirane nizove.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[&quot;[k(enter)]&quot; + &#xA;&quot;automobili&quot; + &quot;[[&quot; + &quot;0] = &quot; + Chr(34) + &quot;Audi&quot;+Chr(34) + &quot;; [k(enter)]&quot; +&#xA;&quot;automobili&quot; + &quot;[[&quot; + &quot;1] = &quot; + Chr(34) + &quot;Peugeot&quot;+Chr(34) + &quot;; [k(enter)]&quot; +&#xA;&quot;automobili&quot; + &quot;[[&quot; + &quot;2] = &quot; + Chr(34) + &quot;BMW&quot;+Chr(34) + &quot;; [k(enter)]&quot; +&#xA;&quot;automobili&quot; + &quot;[[&quot; + &quot;3] = &quot; + Chr(34) + &quot;Citroen&quot;+Chr(34) + &quot;; [k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost NULTOG elementa niza 'AUTOMOBILI' je: &quot; + Chr(34) + &quot; + automobili[[0]&quot;+ &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost PRVOG elementa niza 'AUTOMOBILI' je: &quot; + Chr(34) + &quot; + automobili[[1]&quot;+ &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost DRUGOG elementa niza 'AUTOMOBILI' je: &quot; + Chr(34) + &quot; + automobili[[2]&quot;+ &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost TRECEG elementa niza 'AUTOMOBILI' je: &quot; + Chr(34) + &quot; + automobili[[3]&quot;+ &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;[k(enter)]&quot; + &#xA;&quot;ocene&quot; + &quot;[[&quot; + &quot;0] = 5&quot;  + &quot;; [k(enter)]&quot; +&#xA;&quot;ocene&quot; + &quot;[[&quot; + &quot;1] = 4&quot; +  &quot;; [k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost NULTOG elementa niza 'OCENE' je: &quot; + Chr(34) + &quot; + ocene[[0]&quot;+ &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost PRVOG elementa niza 'OCENE' je: &quot; + Chr(34) + &quot; + ocene[[1]&quot;+ &quot;[k(right)]; [k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ee2c6ffc-fdb2-4be0-860f-41af2aa28ceb" InformativeScreenshot="692e2c95fbdc6dba5d7b6d3a917bb849" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Čuvanje fajla" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Da bismo sačuvali fajl pritisnućemo Ctrl+S.&quot;]" />
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_3" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="151f8892-da8d-40b1-a80d-fde5335aceae" InformativeScreenshot="875e19ca4ef56e873357d48dbfa8a0fc" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9e4586d-4f6d-41f2-adbc-0aa444ba53b4" InformativeScreenshot="7b5264064bd60b064909961deee13e17" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Deklaracija konstrukcija i inicijalizacija" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Moguće je, u jednoj jedinoj naredbi, spojiti ove tri stvari:&quot;+ Environment.NewLine + &#xA;&quot;izvršiti DEKLARACIJU niza (dakle, definisati kog su tipa elementi niza i rezervisati promenljivu za taj niz), &quot; +  Environment.NewLine + &#xA;&quot;izvršiti KONSTRUKCIJU niza (odrediti koliko elemenata taj niz treba da ima),&quot; +  Environment.NewLine + &#xA;&quot;i izvršiti INICIJALIZACIJU (te elemente napuniti početnim vrednostima). &quot; + Environment.NewLine +   Environment.NewLine + &#xA;&quot;Na primer, int[] predmeti = {'Srpski', 'Matematika', 'Fizika'}; &quot; + Environment.NewLine + &#xA;&quot;U ovom primeru je inicijalnizacija niza izvršena tako što su u okviru vitičastih zagrada nabrojane vrednosti tog niza. &quot; +Environment.NewLine +  Environment.NewLine + &#xA;&quot;Onoliko vrednosti koliko postoji u vitičastim zagradama, nad toliko vrednosti će biti izvršena konstrukcija niza.&quot; +Environment.NewLine + &#xA;&quot;U ovom slučaju biće izvršena konstrukcija niza predmeti, koji će imati 3 elementa, a vrednost tih elemenata će biti 'Srpski', 'Matematika' i  'Fizika'.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[&quot;[k(enter)]&quot; + &#xA;&quot;double[[] cene = &quot; + &quot;{520, 350.45, 450.63};&quot; +&quot;[k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost NULTOG elementa niza 'CENE' je: &quot; + Chr(34) + &quot; + cene[[0]&quot;+ &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost PRVOG elementa niza 'CENE' je: &quot; + Chr(34) + &quot; + cene[[1]&quot;+ &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Vrednost DRUGOG elementa niza 'CENE' je: &quot; + Chr(34) + &quot; + cene[[2]&quot;+ &quot;[k(right)]; [k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7f1a6018-7d29-4504-8021-a9a8141dd4e9" InformativeScreenshot="7b5264064bd60b064909961deee13e17" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_5" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54309230-2a1f-45cd-ab49-cd1493e2b757" InformativeScreenshot="613bb7bbb5a1e3e4507fa865b8cb15df" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="44c607b5-2556-422e-ad0a-e480f33be419" InformativeScreenshot="613bb7bbb5a1e3e4507fa865b8cb15df" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Dužina niza" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[&quot;Jedan od osnovnih podataka vezanih za objekat niza je njegova dužina.&quot; + Environment.NewLine + Environment.NewLine +  &#xA;&quot;Informacija o dužini niza se čuva u atributu 'length'.&quot;+ Environment.NewLine + &#xA;&quot;Dužini niza pristupamo tako što preuzmemo vrednost atributa 'length'.&quot; + Environment.NewLine + &#xA;&quot;Na primer, predmeti.length vraća dužinu niza 'predmeti'.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="[&quot;[k(enter)]&quot; + &#xA;&quot;int duzinaNizaCene = cene.length; &quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Duzina niza 'CENE' je: &quot; + Chr(34) + &quot; + duzinaNizaCene&quot;+ &quot;[k(right)]; [k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7c633545-790c-4533-9df9-83efde5f18a9" InformativeScreenshot="613bb7bbb5a1e3e4507fa865b8cb15df" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_7" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92d67207-7ed5-4391-89ba-c79838fe6269" InformativeScreenshot="7dddb328fa90d124be26b3a1a518c26a" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d2ecfa8b-e227-4498-9395-20d50e40fcfe" InformativeScreenshot="853ae1447e0d5f629c8e2a48bc3b67b8" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayBefore="900" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_9" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="151f8892-da8d-40b1-a80d-fde5335aceae" InformativeScreenshot="875e19ca4ef56e873357d48dbfa8a0fc" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_10" Key="w" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9e4586d-4f6d-41f2-adbc-0aa444ba53b4" InformativeScreenshot="7b5264064bd60b064909961deee13e17" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Nizovi.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredni primer" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_10" Text="[&quot;U ovom primeru smo naučili šta su nizovi i kako se koriste. &quot; + Environment.NewLine +&#xA;&quot;U narednom primeru ćemo naučiti šta su naredbe grananja.&quot;]" />
+  </Sequence>
+</Activity>

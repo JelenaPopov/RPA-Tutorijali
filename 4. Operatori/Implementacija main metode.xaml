@@ -1,0 +1,297 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Implementacija_main_metode" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="972.218181818182,5096.72727272727" sap2010:WorkflowViewState.IdRef="Implementacija_main_metode_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Implementacija_main_metode" sap:VirtualizedContainerService.HintSize="376.145454545455,5032.14545454546" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="600" Name="delayBefore" />
+      <Variable x:TypeArguments="x:Int32" Default="90" Name="delayBetweenKeys" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Operatori" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Operatori omogućavaju izvršavanje operacija nad promenljivim dajući pri tom određeni rezultat. U Java programskom jeziku operatori se dele na: &quot; + Environment.NewLine +&#xA;&quot;1. Aritmetičke operatore&quot; + Environment.NewLine +&#xA;&quot;2. Relacione operatore&quot; + Environment.NewLine +&#xA;&quot;3. Logičke operatore&quot; + Environment.NewLine +&#xA;&quot;4. Operatore nad bitovima&quot; + Environment.NewLine +&#xA;&quot;5. Operatore dodele&quot; + Environment.NewLine]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Aritmetički operatori" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Aritmetički operatori se koriste za izvršavanje osnovnih matematičkih operacija. Ovde ubrajamo sledeće operatore: &quot; + Environment.NewLine +&#xA;&quot;1. +   (binarni operator koji vraća vrednost ZBIRA dva broja)&quot; + Environment.NewLine +&#xA;&quot;2. -    (binarni operator koji vraća vrednost RAZLIKE dva broja)&quot; + Environment.NewLine +&#xA;&quot;3. *    (binarni operator koji vraća vrednost PROIZVODA dva broja)&quot; + Environment.NewLine +&#xA;&quot;4. /    (binarni operator koji vraća celobrojnu vrednost KOLIČNIKA dva broja)&quot; + Environment.NewLine +&#xA;&quot;5. %   (binarni operator koji vraća OSTATAK pri deljenju dve vrednosti)&quot; + Environment.NewLine +&#xA;&quot;6. ++ (unarni operator koji daje vrednost UVEĆANU ZA 1)&quot; + Environment.NewLine +&#xA;&quot;7. --   (unarni operator koji daje vrednost UMANJENU ZA 1)&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Upotreba aritmetičkih operatora" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Sada ćemo prikazati kako se prethodno opisani operatori koriste.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="%[k(down)][k(down)][k(down)][k(down)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="02b7a9ee-b2bd-4639-8b0e-96791154e5da" InformativeScreenshot="6797c42a9084d6dc4c0372a8a6ce7533" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="%[k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(tab)][k(enter)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="14e7ae4b-47cd-4807-9bc4-66bc81884575" InformativeScreenshot="8c49f1d4364a7f56ff485969b4a955a2" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[&quot;int a = 100;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;int b = 50;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;***** ARITMETICKI OPERATORI *****&quot; + Chr(34) + &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;int zbir = a + b;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '+' operatora: &quot; + Chr(34) + &quot; + zbir&quot;+ &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;int razlika = a - b;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '-' operatora: &quot; + Chr(34) + &quot; + razlika&quot;+ &quot;[k(right)]; [k(enter)]&quot; +&#xA;&quot;int proizvod = a * b;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '*' operatora: &quot; + Chr(34) + &quot; + proizvod&quot;+ &quot;[k(right)]; [k(enter)]&quot; +&#xA;&quot;a++;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '++' operatora: &quot; + Chr(34) + &quot; + a&quot;+ &quot;[k(right)]; [k(enter)]&quot; +&#xA;&quot;b--;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '--' operatora: &quot; + Chr(34) + &quot; + b&quot;+ &quot;[k(right)]; [k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="734e01ae-9eb3-44db-94c3-2f53af5fab05" InformativeScreenshot="22c393da6878f150c7e5df4f106b8a92" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Čuvanje fajla" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Da bismo sačuvali fajl pritisnućemo Ctrl+S.&quot;]" />
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_1" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fb808146-81ba-4df2-9abd-22b9afb3b2c0" InformativeScreenshot="f2e0fef12d9b071091c715bf0702e727" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3efa8865-14c8-4e46-9a11-08e22d5613a0" InformativeScreenshot="f2e0fef12d9b071091c715bf0702e727" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Relacioni operatori" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Relacioni operatori se koriste za poređenje vrednosti bilo kog numeričkog tipa ili tipa char. Ovi operatori vraćaju vrednost true ili false (tipa boolean). Ovde ubrajamo sledeće operatore: &quot; + Environment.NewLine +&#xA;&quot;1. == (proverava da li su dve vrednosti JEDNAKE i ako jesu vraća vrednost true, u suprotnom false)&quot; + Environment.NewLine +&#xA;&quot;2. !=  (proverava da li su dve vrednosti RAZLIČITE i ako jesu vraća vrednost true, u suprotnom false)&quot; + Environment.NewLine +&#xA;&quot;3. &gt;   (proverava da li je leva vrednost VEĆA od desne i ako jeste vraća vrednost true, u suprotnom false)&quot; + Environment.NewLine +&#xA;&quot;4. &lt;   (proverava da li je leva vrednost MANJA od desne i ako jeste vraća vrednost true, u suprotnom false)&quot; + Environment.NewLine +&#xA;&quot;5. &gt;= (proverava da li je leva vrednost VEĆA ILI JEDNAKA desnoj i ako jeste vraća vrednost true, u suprotnom false)&quot; + Environment.NewLine +&#xA;&quot;6. &lt;= (proverava da li je leva vrednost MANJA ILI JEDNAKA desnoj i ako jeste vraća vrednost true, u suprotnom false)&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Upotreba relacionih operatora" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Sada ćemo prikazati kako se prethodno opisani operatori koriste.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[&quot;[k(enter)]&quot; +&#xA;&quot;int c = 10;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;int d = 5;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;boolean e = false;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;***** RELACIONI OPERATORI *****&quot; + Chr(34) + &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;e = c == d;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '==' operatora: &quot; + Chr(34) + &quot; + e&quot;+ &quot;[k(right)]; [k(enter)]&quot; +&#xA;&quot;e = c != d;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '!=' operatora: &quot; + Chr(34) + &quot; + e&quot;+ &quot;[k(right)]; [k(enter)]&quot; +&#xA;&quot;e = c &gt; d;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '&gt;' operatora: &quot; + Chr(34) + &quot; + e&quot;+ &quot;[k(right)]; [k(enter)]&quot; +&#xA;&quot;e = c &lt; d;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '&lt;' operatora: &quot; + Chr(34) + &quot; + e&quot;+ &quot;[k(right)]; [k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b05087d7-1226-4221-a0f1-1053e104f6f8" InformativeScreenshot="7be9385b954cde6fce00ba2d5789c441" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Čuvanje fajla" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Da bismo sačuvali fajl pritisnućemo Ctrl+S.&quot;]" />
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_3" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f6efdc88-e0e7-4bd8-a6b7-9cb6c813beaf" InformativeScreenshot="1d6a0b9388abb13b82f7e6c3cfd96bf4" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0477161b-094e-4b4e-879c-3037a76cd60b" InformativeScreenshot="1d6a0b9388abb13b82f7e6c3cfd96bf4" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Logićki operatori" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Logički operatori se primenjuju samo na operande tipa boolean i daju rezultat tipa boolean. Ovde ubrajamo sledeće operatore: &quot; + Environment.NewLine +&#xA;&quot;1. &amp;&amp; (logičko I - binarni operator koji daje rezultat true kada su OBA izraza true, u svakom dugom slučaju vraća false)&quot; + Environment.NewLine +&#xA;&quot;2. ||     (logičko ILI - binarni operator koji daje rezultat true kada je BAR JEDAN od izraza true, u suprotnom daje false)&quot; + Environment.NewLine +&#xA;&quot;3. !      (negacija - unarni operator koji vraća true kada se primeni na operandu koja ima vrednost false i obrnuto)&quot; + Environment.NewLine]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Upotreba logičkih operatora" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[&quot;Sada ćemo prikazati kako se prethodno opisani operatori koriste.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[&quot;[k(enter)]&quot; +&#xA;&quot;boolean f = true;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;boolean g = false;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;boolean h = false;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;***** LOGICKI OPERATORI *****&quot; + Chr(34) + &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;h = f &amp;&amp; g;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '&amp;&amp;' operatora: &quot; + Chr(34) + &quot; + h&quot;+ &quot;[k(right)]; [k(enter)]&quot; +&#xA;&quot;h = f || g;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '||' operatora: &quot; + Chr(34) + &quot; + h&quot;+ &quot;[k(right)]; [k(enter)]&quot;  +&#xA;&quot;h = !f;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '!' operatora: &quot; + Chr(34) + &quot; + h&quot;+ &quot;[k(right)]; [k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54379bf1-a217-42a5-ae58-795e28c4d867" InformativeScreenshot="16ed49f0cb61a9a39a6753dc8c4d20fd" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Čuvanje fajla" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_10" Text="[&quot;Da bismo sačuvali fajl pritisnućemo Ctrl+S.&quot;]" />
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_5" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e2acd612-12cc-4e95-9c42-9c9c7173c4a9" InformativeScreenshot="c762d09f0a75f072dadd6e3ae9285d4d" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d7dab76-9922-472c-9262-6cf6df27020b" InformativeScreenshot="ae0593c651a69825a8f7d5e6dd3e374f" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Operatori dodele" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_11" Text="[&quot;Osnovni operator dodele je operator '=', kojim se jedna vrednost dodeljuje drugoj.  U Java programskom jeziku postoje i operatori dodele kojim se odjednom izvršava više operacija. To su operatori: &quot; + Environment.NewLine +&#xA;&quot;1. +=  (dodeljuje levom operandu vrednost ZBIRA levog i desnog operanda)&quot; + Environment.NewLine +&#xA;&quot;2. -=   (dodeljuje levom operandu vrednost RAZLIKE levog i desnog operanda)&quot; + Environment.NewLine +&#xA;&quot;3. *=   (dodeljuje levom operandu vrednost PROIZVODA levog i desnog operanda)&quot; + Environment.NewLine +&#xA;&quot;4. /=   (dodeljuje levom operandu vrednost celobrojnog DELJENJA levog i desnog operanda)&quot; + Environment.NewLine +&#xA;&quot;5. %=  (dodeljuje levom operandu OSTATAK pri deljenju levog i desnog operanda)&quot; + Environment.NewLine]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Upotreba operatora dodele" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_12" Text="[&quot;Sada ćemo prikazati kako se prethodno opisani operatori koriste.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="[&quot;[k(enter)]&quot; +&#xA;&quot;int i = 20;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;int j = 10;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;***** OPERATORI DODELE *****&quot; + Chr(34) + &quot;[k(right)]; [k(enter)]&quot; + &#xA;&quot;j += i;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '+=' operatora: &quot; + Chr(34) + &quot; + j&quot;+ &quot;[k(right)]; [k(enter)]&quot; +&#xA;&quot;j = 10;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;j -= i;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '-=' operatora: &quot; + Chr(34) + &quot; + j&quot;+ &quot;[k(right)]; [k(enter)]&quot;  +&#xA;&quot;j = 10;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;j *= i;&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println(&quot;+ Chr(34) + &quot;Rezultat primene '*=' operatora: &quot; + Chr(34) + &quot; + j&quot;+ &quot;[k(right)]; [k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c6ea075b-eccf-49df-8ae3-cd5a4a4bc010" InformativeScreenshot="41f9571b2aacfd0b7564619e19f8ada0" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Čuvanje fajla" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_13" Text="[&quot;Da bismo sačuvali fajl pritisnućemo Ctrl+S.&quot;]" />
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_7" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0a071882-f8fc-4b0e-9ef8-ba87455a346a" InformativeScreenshot="ef859ba80f6c7f86e5d4d69d252ec23c" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cd4916c3-47b4-44c0-be09-e72c1ca9735a" InformativeScreenshot="ef859ba80f6c7f86e5d4d69d252ec23c" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayBefore="900" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_9" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0a071882-f8fc-4b0e-9ef8-ba87455a346a" InformativeScreenshot="ef859ba80f6c7f86e5d4d69d252ec23c" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_10" Key="w" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cd4916c3-47b4-44c0-be09-e72c1ca9735a" InformativeScreenshot="ef859ba80f6c7f86e5d4d69d252ec23c" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Operatori/src/Operatori.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Operatori.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredni primer" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_14" Text="[&quot;Ovo je bio primer u kom smo naučili šta su operatori, koji operatori postoje i kako se koriste.&quot;  +Environment.NewLine +&#xA;&quot;U narednom primeru ćemo naučiti šta su nizovi i kako se koriste.&quot;]" />
+  </Sequence>
+</Activity>

@@ -1,0 +1,249 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Implementacija_main_metode" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="972.218181818182,3789.38181818182" sap2010:WorkflowViewState.IdRef="Implementacija_main_metode_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Implementacija_main_metode" sap:VirtualizedContainerService.HintSize="376.145454545455,3724.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="600" Name="delayBefore" />
+      <Variable x:TypeArguments="x:Int32" Default="90" Name="delayBetweenKeys" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredbe ponavljanja" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Naredbe ponavljanja obezbeđuju ciklično izvršavanje nekog bloka naredbi više puta i zato se naredbe ponavljanja često nazivaju i petlje ili ciklusi. &quot; + Environment.NewLine +&#xA;&quot;Blok naredbi se ponavlja sve dok je vrednost definisanog logičkog izraza true. &quot; +&#xA;&quot;Ponavljanje se prekida u trenutku kada vrednost definisanog logičkog izraza postane false. &quot; + Environment.NewLine + Environment.NewLine +&#xA;&quot;U naredbe ponavljanja spadaju: &quot; + Environment.NewLine +&#xA;&quot;1. for &quot; + Environment.NewLine +&#xA;&quot;2. while &quot; + Environment.NewLine +&#xA;&quot;3. do-while &quot; + Environment.NewLine]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="For" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;For petlja vrši iteracije na osnovu vrednosti koje uzima iz nizova, stringova ili rečnika. &quot; + Environment.NewLine +&#xA;&quot;Na primer, for petlju možemo da koristimo kada želimo da ispišemo vrednosti svih elemenata u nekom nizu. &quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="For" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Sada ćemo na jednom jednostavnom primeru pokazati kako se koriste for petlje. &quot; + Environment.NewLine +&#xA;&quot;Kreiraćemo jedan niz i pomoću for petlje ćemo ispisati vrednosti svih elemenata tog niza. &quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="%[k(down)][k(down)][k(down)][k(down)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6ae792fb-2a85-432e-97d2-3e5be041636e" InformativeScreenshot="d0daa8049c7f635c15bfbbcc9805630f" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="%[k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(del)][k(tab)][k(enter)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="220cbbd1-83da-443a-8220-6d25352cf35f" InformativeScreenshot="9b7a792a6c8524e9021660af75f00562" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[&quot;String[[] automobili = &quot; + &quot;{&quot; +&#xA;Chr(34) + &quot;Audi&quot;+ Chr(34) + &quot;, &quot; + &#xA;Chr(34) + &quot;Peugeot&quot;+Chr(34) + &quot;, &quot; +&#xA;Chr(34) + &quot;BMW&quot;+Chr(34) + &quot;, &quot; +&#xA;Chr(34) + &quot;Citroen&quot;+Chr(34) + &quot;};&quot; +&quot;[k(enter)]&quot; + &#xA;&quot;System.out.print(&quot;+ Chr(34) + &quot;Vrednosti elemenata niza 'automobili' su: &quot; + Chr(34) + &quot;[k(right)][k(right)] [k(enter)]&quot; + &#xA;&quot;for (int i = 0; i &lt; automobili.length; i++) {&quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.print(automobili[[i] + &quot; + Chr(34) + &quot;, &quot; + Chr(34) + &quot;[k(right)][k(down)]&quot; +&quot;[k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa7ad22b-55c2-4883-b874-f496d45f8ab6" InformativeScreenshot="e7f95c4e1c8aceab0a45de7d6512f573" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_1" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c155fd5-36f1-4309-a8b1-70fef71be963" InformativeScreenshot="9fa6191f28d9d267e657e83f9c477b9f" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8fa10fec-91e9-4c68-8b17-c20e9e4a799f" InformativeScreenshot="9fa6191f28d9d267e657e83f9c477b9f" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="While" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;While petlja se koristi u situacijama kada blok naredbi treba da se izvši određeni broj puta.&quot; + Environment.NewLine +&#xA;&quot;Broj ponavljanja tela petlje se kontroliše na osnovu vrednosti logičkog izraza. &quot; + &#xA;&quot;Ovaj logički izraz se naziva uslov prekida petlje, jer se ponavljanje prekida u trenutku kada vrednost tog logičkog izraza postane false. &quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="While" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Sada ćemo na jednom jednostavnom primeru pokazati kako se koriste while petlje. &quot; + Environment.NewLine +&#xA;&quot;Kreiraćemo jednu while petlju koja će ispisati sve jednocifrene brojeve.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[&quot;[k(enter)]&quot; +&#xA;&quot;int broj = 0;&quot;  + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println();  //pomeranje kursora u novi red &quot;+ &quot;[k(enter)]&quot; + &quot;[k(enter)]&quot; + &#xA;&quot;System.out.print(&quot;+ Chr(34) + &quot;While petlja -&gt; Jednocifreni brojevi su: &quot; + Chr(34) + &quot;[k(right)][k(right)] [k(enter)]&quot; + &#xA;&quot;while (broj &lt; 10) { &quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.print(broj + &quot; + Chr(34) + &quot;, &quot; + Chr(34) + &quot;[k(right)]; &quot; +&quot;[k(enter)]&quot; +&#xA;&quot;broj = broj + 1;&quot; + &quot;[k(down)][k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8b4903f9-c96d-4aac-bcc9-a7fd2489c364" InformativeScreenshot="10ba88ebba6dc0ecd003b90a1f8a13a9" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_3" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b80e53d7-8e67-43b7-ad32-772ef32437f9" InformativeScreenshot="960833066d2373fc5f68d733f118a0a9" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8b8ebc54-c552-4e36-97b2-b45e8ed5d790" InformativeScreenshot="960833066d2373fc5f68d733f118a0a9" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Do-while" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Do-while petlje se razlikuje od while petlji po tome što se uslov prekida petlje proverava na kraju svakog izvršavanja tela petlje.&quot;+&#xA;&quot; To znači da će se, za razliku od while petlje, do-while petlja izvršiti barem jednom, pre provere uslova prekida petlje.&quot;]" />
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="While" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Sada ćemo na jednom jednostavnom primeru pokazati kako se koriste do-while petlje. &quot; + Environment.NewLine +&#xA;&quot;Kreiraćemo jednu do-while petlju koja će ponovo ispisati sve jednocifrene brojeve.&quot;]" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="[delayBefore]" DelayBetweenKeys="[delayBetweenKeys]" DisplayName="Type Into 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,133.527272727273" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[&quot;[k(enter)]&quot; +&#xA;&quot;broj = 0;&quot;  + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.println();  //pomeranje kursora u novi red &quot;+ &quot;[k(enter)]&quot; + &quot;[k(enter)]&quot; + &#xA;&quot;System.out.print(&quot;+ Chr(34) + &quot;Do-while petlja -&gt; Jednocifreni brojevi su: &quot; + Chr(34) + &quot;[k(right)][k(right)] [k(enter)]&quot; + &#xA;&quot;do { &quot; + &quot;[k(enter)]&quot; +&#xA;&quot;System.out.print(broj + &quot; + Chr(34) + &quot;, &quot; + Chr(34) + &quot;[k(right)][k(right)] &quot; +&quot;[k(enter)]&quot; +&#xA;&quot;broj = broj + 1;&quot; + &quot;[k(down)]&quot; +&#xA;&quot; while (broj &lt; 10);&quot; + &quot;[k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b7877037-55d4-41c8-afbc-8f8c70c57b5d" InformativeScreenshot="960833066d2373fc5f68d733f118a0a9" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_5" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0f28d534-8791-4a83-8f1c-7156143ec2ca" InformativeScreenshot="be4d5315e4855fb62fbc1ae0518200b9" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="s" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ed767b71-0e4c-433c-bab3-5df1f3a385cb" InformativeScreenshot="c7420c8e2bfb14254ad53b1fd5e8a0a6" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Pokretanje programa workflow" sap:VirtualizedContainerService.HintSize="334.254545454545,112.581818181818" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Pokretanje programa.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayBefore="900" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_7" KeyModifiers="None">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0f28d534-8791-4a83-8f1c-7156143ec2ca" InformativeScreenshot="be4d5315e4855fb62fbc1ae0518200b9" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334.254545454545,154.472727272727" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="w" KeyModifiers="Ctrl">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ed767b71-0e4c-433c-bab3-5df1f3a385cb" InformativeScreenshot="c7420c8e2bfb14254ad53b1fd5e8a0a6" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Petlje/src/Petlje.java - Eclipse IDE' /&gt;&lt;wnd aaname='*Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Petlje.java' cls='SWT_Window0' /&gt;&lt;wnd aaname='Horizontal' cls='SWT_Window0' /&gt;&lt;ctrl role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Naredni primer" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;U ovom primeru smo naučili šta su petlje, a u narednom primeru ćemo videti kako se u istoj metodi kombinuje do sad obrađeno gradivo: for petlje, if naredbe i metode za rad sa stringovima.&quot;]" />
+  </Sequence>
+</Activity>

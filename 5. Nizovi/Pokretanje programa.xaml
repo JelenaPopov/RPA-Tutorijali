@@ -1,0 +1,137 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Pokretanje_programa" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="892.8,652.8" sap2010:WorkflowViewState.IdRef="Pokretanje_programa_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Pokretanje_programa" sap:VirtualizedContainerService.HintSize="376.145454545455,588.218181818182" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="600" Name="delayBefore" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox ChosenButton="{x:Null}" Caption="Pokretanje projekta" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334.254545454545,58.4727272727273" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Naredni korak je pokretanje Java programa.&quot; + Environment.NewLine]" />
+    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="[delayBefore]" DisplayName="Click 'menu item  Run'" sap:VirtualizedContainerService.HintSize="334.254545454545,105.6" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ec2c317-830f-43ff-af46-5b72ce3a6733" InformativeScreenshot="621ce3836675dc72fc5b195424696c45" Selector="&lt;wnd app='eclipse.exe' cls='SWT_Window0' title='Tutorijali - Nizovi/src/Nizovi.java - Eclipse IDE' /&gt;&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Run' role='menu item' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="[delayBefore]" DisplayName="Click 'menu item  Run As'" sap:VirtualizedContainerService.HintSize="334.254545454545,105.6" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4bc8ca2d-be72-422c-be03-2a4815e3d512" InformativeScreenshot="d1b479de94e1e5c61b73eeece777d6d6" Selector="&lt;wnd app='eclipse.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Run' role='popup menu' /&gt;&lt;ctrl name='Run As' role='menu item' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="[delayBefore]" DisplayName="Click 'eclipse.exe'" sap:VirtualizedContainerService.HintSize="334.254545454545,105.6" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b90e9d74-1a60-4c85-ad96-eb4f0a0cf424" InformativeScreenshot="f9513d53be7536246e0086dfa1a92728" Selector="&lt;wnd app='eclipse.exe' cls='#32768' idx='*' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+  </Sequence>
+</Activity>
